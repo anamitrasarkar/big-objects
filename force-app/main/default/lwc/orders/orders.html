@@ -1,0 +1,41 @@
+<template>
+    <div class="c-container">
+        <lightning-card title="Orders" icon-name="standard:task">
+
+            <!-- <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="text" 
+                            placeholder="Enter Account Name"
+                            onchange={getOrderData}>
+                        </lightning-input>
+                        <lightning-button 
+                            label="Search" 
+                            variant="brand" 
+                            onclick={handleSearch}>>
+                        </lightning-button>                    
+                </lightning-layout-item>
+            </lightning-layout> -->
+
+        <!-- Data table -->
+        <div class="slds-m-around_medium" if:true={ordersList}>
+            <lightning-datatable
+                key-field="Id"
+                show-row-number-column 
+                hide-checkbox-column                 
+                data={ordersList}
+                columns={columns}>
+            </lightning-datatable>
+        </div>            
+
+            <div class="c-container">
+                <lightning-layout>
+                    <lightning-layout-item padding="around-small">
+                        {errorMsg}
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>
