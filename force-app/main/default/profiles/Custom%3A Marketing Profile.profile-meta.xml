@@ -306,6 +306,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Transactions_Rollup__c.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Transactions_Rollup__c.Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Transactions_Rollup__c.Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Transactions__c.Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -335,6 +350,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>Transactions_Rollup__c-Transactions Rollup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Transactions__c-Transactions Layout</layout>
     </layoutAssignments>
     <objectPermissions>
@@ -355,6 +373,10 @@
         <object>Case</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabVisibilities>
+        <tab>Transactions_Rollup__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
